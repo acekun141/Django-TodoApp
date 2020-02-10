@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  All Todo
+{% endblock title %}
+
+{% block style_file %}{% endblock style_file %}
+
+{% block content %}
+  <div class="module-all-todo">
+    <h2 class="title">Todos</h2>
+    {% for todo in todos %}
+      <div class="todo">
+        <form action='' method="POST">
+          {% csrf_token %}
+          <input type="hidden" value="{{ todo.id }}" name="id">
+          <button class="status {{ todo.status }}" type="submit" name="status"></button>
+          <p>{{ todo.title }}</p>
+          <button class="view" type="submit" name="view">View</button>
+          <button class="delete" type="submit" name="delete">Delete</button>
+        </form>
+      </div>
+    {% endfor %}
+    <form class="add" action="" method="POST">
+        {% csrf_token %}
+        <button type="submit" name="add" class="add">Add +</button>
+    </form>
+  </div>
+{% endblock content %}

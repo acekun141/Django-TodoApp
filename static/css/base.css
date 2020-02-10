@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f7;
+}
+#navbar {
+  border-bottom: 1px solid #d2d2d2;
+  background-color: white;
+
+}
+#navbar .navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 980px;
+  padding: 15px 22px;
+  margin: auto;
+}
+
+#navbar .logo {}
+#navbar .logo p {
+  font-size: 25px;
+}
+#navbar .nav {
+  list-style-type: none;
+  padding: 0 22px;
+}
+#navbar .nav .nav-item {
+}
+#navbar .nav .nav-item .nav-item__link {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.module-all-todo {
+  max-width: 980px;
+  padding: 0 22px;
+  margin: 20px auto;
+}
+.module-all-todo .title {
+  font-size: 20px;
+}
+.module-all-todo .todo {
+  background-color: white;
+  margin-top: 15px;
+  border-radius: 0.5em;
+}
+.module-all-todo .todo form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.module-all-todo .todo .view {
+  margin-left: auto;
+}
+.module-all-todo .todo form button {
+  padding: 15px;
+  border: unset;
+  outline: unest;
+  background-color: unset;
+  cursor: pointer;
+}
+.module-all-todo .todo form button:focus {
+  outline: unset;
+}
+.module-all-todo .todo form .status {
+  height: 20px;
+  width: 20px;
+  margin-left: 15px;
+  border-radius: 0.5em;
+}
+.module-all-todo .todo form .True {
+  background-color: #69c859;
+}
+.module-all-todo .todo form .False {
+  background-color: #ff3b30;
+}
+.module-all-todo .todo form .view {
+  color: #f59408;
+  border-left: 1px solid #d2d2d2;
+}
+.module-all-todo .todo form .delete {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  color: #ed5353;
+  border-left: 1px solid #d2d2d2;
+}
+.module-all-todo .todo form p {
+  margin-left: 30px;
+}
+.module-all-todo .add {
+}
+.module-all-todo .add button {
+  cursor: pointer;
+  background: unset;
+  outline: unset;
+  border: unset;
+  font-size: 15px;
+  color: #0279ff;
+  margin: 15px auto;
+  display: block;
+}
+
+.module-todo-detail {
+  max-width: 980px;
+  padding: 0 22px;
+  margin: 30px auto;
+}
+.module-todo-detail form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 22px;
+  background-color: white;
+  border-radius: 0.5em;
+}
+.module-todo-detail h2 {
+  padding: 15px 0;
+}
+.module-todo-detail p {
+  font-size: 15px;
+}
+.module-todo-detail .time {
+  font-size: 13px;
+  color: #8e8e93;
+  padding: 15px 0;
+}
+.module-todo-detail button {
+  border: 1px solid #d2d2d2;
+  outline: unset;
+  background-color: unset;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 0.5em;
+}
+.module-todo-detail button:focus {
+  outline: unset;
+}
+.module-todo-detail .status {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 0.5em;
+  right: 22px;
+  top: 15px;
+}
+.module-todo-detail .True {
+  background-color: #69c859;
+}
+.module-todo-detail .False {
+  background-color: #ed5353;
+}
+.module-todo-detail .edit {
+  color: #f59408;
+}
+.module-todo-detail .delete {
+  color: #ed4e2d;
+}
+.module-todo-detail .button-group {
+  margin-bottom: 15px;
+}
+
+.module-todo-form {
+  margin: 30px auto;
+  max-width: 980px;
+  padding: 0 22px;
+}
+.module-todo-form form {
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.module-todo-form form input {
+  padding: 15px 0;
+  border: unset;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+}
+.module-todo-form form textarea {
+  padding: 15px 0;
+  border: unset;
+  width: 100%;
+}
+.module-todo-form form label {
+  font-style: italic;
+  color: #8e8e93;
+}
+.module-todo-form form #id_status {
+  margin-top: 15px;
+  width: unset;
+}
+.module-todo-form form button {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: unset;
+  outline: unset;
+  border: 1px solid #d2d2d2;
+  border-radius: 0.5em;
+}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Title
+{% endblock title %}
+
+{% block content %}
+  <div class="module-todo-detail">
+    <form action="" method="POST">
+      {% csrf_token %}
+      <h2>{{ todo.title }}</h2>
+      <p>{{ todo.content }}</p>
+      <p class="time">{{ todo.time_created }}</p>
+      <button class="status {{ todo.status }}" name="status"></button>
+      <div class="button-group">
+        <button class="edit" name="edit">Edit</button>
+        <button class="delete" name="delete">Delete</button>
+      </div>
+    </form>
+  </div>
+{% endblock content %}
